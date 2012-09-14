@@ -24,3 +24,7 @@ bootingSubNav(document.getElementById('subnav'), offset, class);
 If you don't specify either offset or class or offset then `'navbar-fixed-top'` is used for class and `0` is used for offset.  The class `'booting-sub-nav'` is also added to all elements that are attached to subnav, regardless of whether they have scrolled out of view or not.
 
 If you set a non-zero offset, you should remember to adjust top to compensate.  You will want to add an offset if this is an actual sub-nav, as the offset will be needed to account for the height of the main menu.
+
+## Using it as a component
+
+You can `require('booting-sub-nav')` to get the exact same api.  You'll also get the css above for free (don't forget to override the `top` property if you're adding an offset though).
