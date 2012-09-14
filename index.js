@@ -22,7 +22,7 @@ function getTop(element) {
 
 module.exports = subnav;
 function subnav(element, offset, cls) {
-    if (!cls && typeof offset = 'string') {
+    if (!cls && typeof offset === 'string') {
         cls = offset;
         offset = 0;
     }
