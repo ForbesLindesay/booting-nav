@@ -1,0 +1,1 @@
+uglifyjs --no-copyright --output booting-sub-nav.min.js -v --lift-vars build/build.js

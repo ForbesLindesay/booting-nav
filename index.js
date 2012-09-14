@@ -1,18 +1,6 @@
 var classes = require('classes');
 var scroll = require('./scroll');
 
-//scroll.onWheel(move);
-//scroll.onGesture(move);
-scroll.onScroll(move);
-//scroll.onOffsetChange(move);
-
-function move() {
-    var scrollTop = scroll.scrollTop();
-    //console.log(e.deltaY);
-    console.log(scrollTop);
-}
-
-
 function getTop(element) {
     var box = element.getBoundingClientRect();
     var clientTop  = document.documentElement.clientTop  || document.body.clientTop  || 0;

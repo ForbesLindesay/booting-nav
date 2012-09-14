@@ -1,0 +1,1 @@
+component-build -s -v
