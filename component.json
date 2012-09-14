@@ -1,0 +1,15 @@
+{
+  "name": "booting-sub-nav",
+  "repo": "ForbesLindesay/booting-sub-nav",
+  "description": "Fixes subnav to the top when it scrolls out of view (intended to work with bootstrap)",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "booting-sub-nav.css"
+  ]
+}
