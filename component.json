@@ -4,10 +4,13 @@
   "description": "Fixes subnav to the top when it scrolls out of view (intended to work with bootstrap)",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "component/classes": "*"
+  },
   "development": {},
   "scripts": [
-    "index.js"
+    "index.js",
+    "scroll.js"
   ],
   "styles": [
     "booting-sub-nav.css"
