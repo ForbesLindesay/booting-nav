@@ -14,5 +14,6 @@
   ],
   "styles": [
     "booting-sub-nav.css"
-  ]
+  ],
+  "license": "MIT"
 }
