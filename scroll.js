@@ -23,7 +23,7 @@ if (!support) {
     support = "DOMMouseScroll";
 }
 
-module.exports.onScroll = function (callback) {
+exports.onScroll = function (callback) {
     window[_addEventListener](prefix  + 'scroll', callback, false);
     window[_addEventListener](prefix + 'gesturechange', callback, false);
     window[_addEventListener](prefix + support, callback, false);
@@ -34,11 +34,11 @@ module.exports.onScroll = function (callback) {
 };
 
 if (window.pageYOffset !== undefined) {
-    module.exports.scrollTop = function () {
+    exports.scrollTop = function () {
         return window.pageYOffset;
     };
 } else {
-    module.exports.scrollTop = function () {
+    exports.scrollTop = function () {
         return (document.documentElement || document.body.parentNode || document.body).scrollTop;
     };
 }

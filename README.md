@@ -1,30 +1,39 @@
-booting-sub-nav
-===============
+# booting-nav
 
-Intended to fix subnav to the top when it scrolls out of view (works great with bootstrap).  This library can easilly be used to add a class to something when it scrolls out of view, and remove the class when it scrolls back into view.
+Intended to fix navigation to the top when it scrolls out of view (works great with bootstrap).  This library can easilly be used to add a class to something when it scrolls out of view, and remove the class when it scrolls back into view.
 
-## Using it stand-alone
+## Usage
 
-Add a script tag for `booting-sub-nav.min.js` (which you can download from downloads), then use the following to use:
+This library can be built to use standalone, just download the github repo and then do:
 
-```javascript
-bootingSubNav(document.getElementById('subnav'), offset, class);
+```console
+$ npm install browserify -g
+$ npm install
+$ browserify index.js --standalone boot > boot.js
 ```
 
-```css
-.booting-sub-nav.navbar-fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1020;
-}
+You can then use `boot` instead of `require('booting-nav')`.
+
+Example usage:
+
+```js
+var boot = require('booting-nav')
+var $ = document.getElementById.bind(document)
+
+boot($('blue'))
+boot($('red'), {offset: 40})
+boot($('green'), {offset: 80})
+boot($('orange'), {offset: 120, minWidth: '400px'})
 ```
 
-If you don't specify either offset or class or offset then `'navbar-fixed-top'` is used for class and `0` is used for offset.  The class `'booting-sub-nav'` is also added to all elements that are attached to subnav, regardless of whether they have scrolled out of view or not.
+This results in each block sticking to the top at the appropriate offset.  Then `minWidth` parameter is oftne useful for mobile layouts.
 
-If you set a non-zero offset, you should remember to adjust top to compensate.  You will want to add an offset if this is an actual sub-nav, as the offset will be needed to account for the height of the main menu.
+You can skip the auto-generated class and just have your own class used instead by adding the `cls` option:
 
-## Using it as a component
+```js
+boot($('orange'), {cls: 'nav-fixed-top'})
+```
 
-You can `require('booting-sub-nav')` to get the exact same api.  You'll also get the css above for free (don't forget to override the `top` property if you're adding an offset though).
+## License
+
+MIT
