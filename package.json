@@ -1,6 +1,6 @@
 {
   "name": "booting-nav",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Fix subnav to the top when it scrolls out of view (works well with bootstrap)",
   "keywords": [],
   "dependencies": {},
