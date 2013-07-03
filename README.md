@@ -2,6 +2,9 @@
 
 Intended to fix navigation to the top when it scrolls out of view (works great with bootstrap).  This library can easilly be used to add a class to something when it scrolls out of view, and remove the class when it scrolls back into view.
 
+[![Dependency Status](https://gemnasium.com/ForbesLindesay/booting-nav.png)](https://gemnasium.com/ForbesLindesay/booting-nav)
+[![NPM version](https://badge.fury.io/js/booting-nav.png)](http://badge.fury.io/js/booting-nav)
+
 ## Usage
 
 This library can be built to use standalone, just download the github repo and then do:
