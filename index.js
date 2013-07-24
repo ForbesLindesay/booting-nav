@@ -33,7 +33,6 @@ function subnav(element, options) {
   scroll.onScroll(doScroll)
   function doScroll(){
     if (minWidth && screen.availWidth < minWidth) return
-    console.log(element.id + ' (' + dataTop + ' - ' + offset + '<=' + scroll.scrollTop() + ')')
     if (!stuck && getTop(element) - offset <= scroll.scrollTop())
       stick()
     else if (stuck && dataTop - offset > scroll.scrollTop())
