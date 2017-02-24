@@ -5,8 +5,8 @@
   "keywords": [],
   "dependencies": {},
   "devDependencies": {
-    "express": "~3.3.1",
-    "browserify-middleware": "~1.13.1"
+    "express": "~4.14.1",
+    "browserify-middleware": "~7.1.0"
   },
   "scripts": {
     "test": "node test/server.js"
